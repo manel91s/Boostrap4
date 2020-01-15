@@ -1,0 +1,121 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Ejemplo de Grid con Bootstrap </title>
+    <style>
+
+        body {
+            background-color: #f0f3f5;
+            color: #fff;
+        }
+
+        header {
+            background: #9aca40;
+            padding: 20px;
+            margin-bottom:20px;
+        }
+
+        .contenedor-main {
+            margin-bottom:20px;
+
+        }
+
+        main {
+            background: #fff;
+            color:#424242;
+            padding:20px 0;
+        }
+        
+        aside{
+            background:#dee5e8;
+            padding: 60px 0;
+            color: #0d47a1;
+
+        }
+
+        .widgets {
+            background: #f2f2f2;
+            color: #424242;
+            margin-bottom:20px;
+        }
+
+        .widgets div {
+            background-color:#2196f3;
+            color: #fff;
+            padding:20px;
+
+        }
+
+        footer {
+            padding:20px 0;
+            background-color:#1e1e1e;
+        }
+
+
+        
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col">
+                <h1>HEADER</h1>
+            </div>
+        </header>
+
+        <section class="row">
+            <main class="contenedor-main col-md-8">
+                <h2>Main</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt optio architecto ab repellendus quibusdam
+                    in debitis ad! Sequi modi beatae quas alias mollitia numquam enim commodi doloremque ipsam distinctio?</p><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro quo obcaecati deserunt adipisci magni qui minima quia modi vel, 
+                    veniam illum ea dolore labore assumenda illo quae corporis dolorum?
+            </main>
+
+                <aside class="col-md-4 align-self-center">
+                    <h3>Aside</h3>
+                </aside>
+
+        </section>
+
+        <section class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum veniam cupiditate qui esse, placeat, ratione maxime non dolores perferendis 
+                    mollitia provident omnis nesciunt alias voluptates iure distinctio cum velit?</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at dolor, officiis quo expedita totam consectetur
+                     voluptate nihil libero beatae omnis voluptas! Fugiat excepturi placeat laborum voluptas magni eos necessitatibus.</p>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Soluta cupiditate aliquam fuga mollitia nostrum consequuntur eveniet quo blanditiis deleniti quos commodi voluptatem fugiat ex voluptatibus, eius distinctio dolor voluptates. Voluptas.</p>
+            </div>
+
+        </section>
+
+        <footer class="row">
+            <div class="col">
+                <h1>FOOTER</h1>
+            </div>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

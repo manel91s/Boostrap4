@@ -1,0 +1,94 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Plantilla</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <!--Mostrar un boton y cuando se presione aparezca un texto-->
+                <!--Si queremos crear otros botones cambiar la id para que no se interfieran-->
+                <p>
+                    <a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="bloque1" class="btn btn-primary">Bloque 1</a>
+                </p>
+
+                <div class="collapse" id="bloque1">
+                    <div class="card card-body">
+                        <h2>Titulo</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae non accusamus fuga odio,
+                            deleniti delectus optio quia tenetur illum qui!</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="row mt-3">
+            <div class="col">
+                <div id="accordion">
+                    <!--CARD #1-->
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                    Contenido #1
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse show" arial-labelledby="heading1" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facere modi unde quam.
+                                Nobis itaque, nihil quam cum eius totam!
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--------------------------------------------------------------------------------------------------------->
+                    <!--CARD #2-->
+                    <div class="card">
+
+                        <div class="card-header" id="heading2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                                    aria-expanded="true" aria-controls="collapse2">
+                                    Contenido #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facere modi unde quam.
+                                Nobis itaque, nihil quam cum eius totam!
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

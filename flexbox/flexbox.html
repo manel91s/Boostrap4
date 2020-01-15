@@ -1,0 +1,214 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Flexbox</title>
+    <style>
+        .contenedor {
+            margin-bottom:20px;
+            background: #0275d8;
+            color:#fff;
+        }
+
+        .contenedor div {
+            background: rgba(255,255,255,.2);
+            padding:15px;
+        }
+
+    </style>
+</head>
+
+  <!--
+        Podemos establecer que tipo de elemento flexbox sera, de tipo block o inline.
+        Y podemos establecer tambien desde que dispositivo lo sera.
+
+        .d-flex
+        .d-inline-flex
+        .d-sm-flex
+        .d-sm-inline-flex
+        .d-md-flex
+        .d-md-inline-flex
+        .d-lg-flex
+        .d-lg-inline-flex
+        .d-xl-flex
+        .d-xl-inline-flex
+    -->
+
+
+   
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Tipos de Display Flex</h4>
+                <hr>
+    <!--Si no queremos trabajar con la grid de boostrap poniendo d-flex desactivamos l
+    a grid y podemos trabajar con display-flex--> <!--OJO: Muchas veces utilizamos sentencias justify-content pero sin utilizar 
+    d-flex estas sentencias no desactivan la grid de boostrap si queremos desactivarlas y trabajar con display flex utilizar "d-flex"-->
+                
+                <!--"d-flex" añadimos display flex al contenedor-->
+                <div class="d-flex p-3 bg-primary text-white">
+                    <p class="mb-0">Display Flex <strong>.d-flex</strong></p>
+                </div>
+
+                <br>
+
+                <!--d-inline-flex el contenedor ocupara el ancho del contenido-->
+                <div class="d-inline-flex p-3 bg-primary text-white">
+                        <p class="mb-0">Display Inline Flex <strong>.d-inline-flex</strong></p>
+                    </div>
+
+            </div>
+
+        </div>
+
+         <!--Variantes                                                         
+        .flex-row
+        .flex-row-reverse
+        .flex-column
+        .flex-column-reverse
+        .flex-sm-row
+        .flex-sm-row-reverse
+        .flex-sm-column
+        .flex-sm-column-reverse
+        .flex-md-row
+        .flex-md-row-reverse
+        .flex-md-column
+        .flex-md-column-reverse
+        .flex-lg-row
+        .flex-lg-row-reverse
+        .flex-lg-column
+        .flex-lg-column-reverse
+        .flex-xl-row
+        .flex-xl-row
+        .flex-xl-row-reverse
+        .flex-xl-column
+        .flex-xl-column-reverse -->
+
+        <div class="row my-4">
+            <div class="col">
+                <h4>Direction</h4>
+                <hr>
+                <p>.flex-row</p>
+                <!--d-flex trabajar con display flex-->
+                <!--""""flex-row"""""-->
+                <div class="contenedor d-flex flex-row">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.flex-reverse</p>
+                <!--d-flex trabajar con display flex-->
+                <!--""""flex-row-reverse"""""-->
+                <div class="contenedor d-flex flex-row-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.flex-column</p>
+                <!--d-flex trabajar con display flex-->
+                <!--""""flex-column"""""-->
+                <div class="contenedor d-flex flex-column">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.flex-column-reverse</p>
+                <!--d-flex trabajar con display flex-->
+                <!--""""flex-column-reverse"""""-->
+                <div class="contenedor d-flex flex-column-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                
+            </div>
+        </div>
+
+<!--Variantes:
+
+    .justify-content-start
+    .justify-content-end
+    .justify-content-center
+    .justify-content-between
+    .justify-content-around
+    .justify-content-sm-start
+    .justify-content-sm-end
+    .justify-content-sm-center
+    .justify-content-sm-between
+    .justify-content-sm-around
+    .justify-content-md-start
+    .justify-content-md-end
+    .justify-content-md-center
+    .justify-content-md-between
+    .justify-content-md-around
+    .justify-content-lg-start
+    .justify-content-lg-end
+    .justify-content-lg-center
+    .justify-content-lg-between
+    .justify-content-lg-around
+    .justify-content-xl-start
+    .justify-content-xl-center
+    .justify-content-xl-between
+    .justify-content-xl-around
+-->
+        <div class="row my-4">
+            <div class="col">
+                
+                <!--Alineacion hotizontal con d-flex justify-content-->
+                <h4>Justify Content</h4>
+                <hr>
+                <p>.justify-content-start</p>
+                <div class="contenedor d-flex justify-content-start">
+                        <div>Caja 1</div>
+                        <div>Caja 2</div>
+                        <div>Caja 3</div>
+                </div>
+
+                <p>.justify-content-center</p>
+                <div class="contenedor d-flex justify-content-center">
+                        <div>Caja 1</div>
+                        <div>Caja 2</div>
+                        <div>Caja 3</div>
+                </div>
+
+                <p>.justify-content-end</p>
+                <div class="contenedor d-flex justify-content-end">
+                        <div>Caja 1</div>
+                        <div>Caja 2</div>
+                        <div>Caja 3</div>
+                </div>
+
+                <p>.justify-content-between</p>
+                <div class="contenedor d-flex justify-content-between">
+                        <div>Caja 1</div>
+                        <div>Caja 2</div>
+                        <div>Caja 3</div>
+                </div>
+
+                <p>.justify-content-around</p>
+                <div class="contenedor d-flex justify-content-around">
+                        <div>Caja 1</div>
+                        <div>Caja 2</div>
+                        <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Formularios_Grid</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <form action="">
+                    <!--En bootstrap4 para trabajar con los inputs tienen que estar dentro del div "form-group"-->
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="pass">Contraseña</label>
+                            <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                            <input type="password" class="form-control" placeholder="Contraseña" name="pass" id="pass">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6 ">
+                            <label for="mensaje">Mensaje</label>
+                            <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                            <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+
+                        </div>
+
+                        <!--Adaptar los dos radios button en una columna de 3-->
+                        <div class="col-12 col-md-3">
+                            <label>Sexo</label>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Mujer
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--Adaptar las ultimas 3 columnas a la select-->
+                        <div class="col-12 col-md-3">
+                            <div class="form-group">
+                                <label for="pais">Pais</label>
+                                <select name="pais" id="pais" class="form-control">
+                                    <option value="mexico">Mexico</option>
+                                    <option value="España">España</option>
+                                    <option value="Colombia">Colombia</option>
+                                </select>
+                            </div>
+
+                <!--"form-check" es como form-control para que abarque el 100% de la columna pero para los checkbox-->
+                        </div>
+
+                    </div>
+
+
+                    <div class=" form-group row">
+                        <!--Crear una fila solo para los terminos y centrar con text-center -->
+                        <div class="col-12 text-center">
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="terminos" id="terminos"
+                                        class="form-check-input mr-2">Acepto
+                                    los termnos y Condiciones
+                                </label>
+
+                                <!--Crear una fila sola para el boton y poder centrarlo y utilizando justify center-->
+
+                                <div class="row justify-content-center mt-3">
+                                    <!--Adaptamos el tamaño del boton a diferentes dispositivos-->
+                                    <div class="col-12 col-sm-9 col-md-4">
+                                        <!--"btn-block" El boton nos lo hace mas grande-->
+                                        <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                  
+
+
+
+
+
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

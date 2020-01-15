@@ -1,0 +1,120 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Scrollspy</title>
+    <style>
+        /*Boostrap4 nos pide que pongamos position: relative; al body  para que funcione bien el scrollspy*/
+        body {
+            position: relative;
+            /*padding-top: 54px;*/
+        }
+
+        /*accedemos a la clase predeterminada*/
+
+        .ma-nav a {
+            color: #fff;
+            padding: 15px;
+        }
+
+        /*ma-nav .active para que agrege un estilo fondo a la seccion del menu donde se encuentra y tenga un efecto hover*/
+
+        .ma-nav .active,
+        .ma-nav a:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        /*Damos un margen a las secciones para que se separen y veamos bien los efectos del ejemplo*/
+        .seccion {
+            margin-bottom: 1000px;
+        }
+
+        /*Separamos el menu con la seccion 1*/
+        .seccion .columna {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+
+<!--utilizar las clases data-spy en el body para que boostrap4 active la clase y data-target que apunta a ala id del contenedor de los enlaces-->
+
+<body data-spy="scroll" data-target="#ma-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--Identificar con id para que boostrap4 indentifique que ese va aser el contenedor de ese menu-->
+                <div id="ma-nav">
+                    <ul class="ma-nav nav fixed-top navbar-inverse bg-primary">
+                        <!--#seccion1, #seccion2, #seccion3 apuntan a las secciones como enlace-->
+                        <li class="nav-item">
+                            <a href="#seccion1" class="nav-link">Seccion #1</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#seccion2" class="nav-link">Seccion #2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#seccion3" class="nav-link">Seccion #3</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--class seccion para que boostrap4 identifique que va a ser la seccion, seccion1: identifica la seccion-->
+            <div class="row seccion" id="seccion1">
+                <div class="col-12 columna">
+                    <h2>Seccion 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta
+                        repudiandae ut officia quae architecto vel obcaecati at commodi rerum! Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Illo cumque provident ratione recusandae explicabo porro
+                        voluptas ipsam,
+                        incidunt eum quae ut veritatis doloribus nesciunt facilis at. Voluptate voluptatibus nostrum
+                        labore.</p>
+                </div>
+
+            </div>
+
+            <div class="row seccion" id="seccion2">
+                <div class="col-12 columna">
+                    <h2>Seccion 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta
+                        repudiandae ut officia quae architecto vel obcaecati at commodi rerum! Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Illo cumque provident ratione recusandae explicabo porro
+                        voluptas ipsam,
+                        incidunt eum quae ut veritatis doloribus nesciunt facilis at. Voluptate voluptatibus nostrum
+                        labore.</p>
+                </div>
+
+            </div>
+
+            <div class="row seccion" id="seccion3">
+                <div class="col-12 columna">
+                    <h2>Seccion 3</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta
+                        repudiandae ut officia quae architecto vel obcaecati at commodi rerum! Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Illo cumque provident ratione recusandae explicabo porro
+                        voluptas ipsam,
+                        incidunt eum quae ut veritatis doloribus nesciunt facilis at. Voluptate voluptatibus nostrum
+                        labore.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

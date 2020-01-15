@@ -1,0 +1,43 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Formularios en linea</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Para crear formularios en linea Bootstrap4 con la clase "form-inline" ya nos lo posiciona en linea automaticamente-->
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control mr-3" id="nombre" placeholder="Nombre">
+                    <input type="password" class="form-control mr-3" id="password" placeholder="Contraseña">
+                    
+                    <div class="form-check mr-3">
+                        <!--"form-check-input" es importante poner esta clase para que bootstrap sepa que es checkbox-->
+                        <input type="checkbox" name="recordar" id="recordar" class="form-check-input">
+                        <!--"form-check-label" tambien es importante poner en el label esta clase alado del checkbox-->
+                        <label for="recordar" class="form-check-label">Recordar Sesion</label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesion" class="btn btn-success" >
+                </form>
+
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

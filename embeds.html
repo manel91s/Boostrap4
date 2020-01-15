@@ -1,0 +1,44 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Responsive Embeds</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!--Este ejemplo sirve para insertar videos y que aga un responsive automatico-->
+
+                <!--tamaño de video
+                21:9 .embed-responsive-21by9
+                16:9 .embed-responsive-16by9
+                4:3 .embed-responsive-4by3
+                1:1 .embed-responsive-1by1
+                -->
+                
+                <div class="embed-responsive embed-responsive-16by9"> <!--16by9: 1600px x 900px-->
+                    <!--allowfullscreen si queremos que el usuario pueda mostrar el video en pantalla completa -->
+
+                    <!--Cambiar url https://www.youtube.com/watch?v=MQKU7_APbWA (link normal de youtube) por = https://www.youtube.com/embed/MQKU7_APbWA" -->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MQKU7_APbWA" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

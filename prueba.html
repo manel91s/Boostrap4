@@ -1,0 +1,200 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Navbar</title>
+    <style>
+        /*Para que el menu tenga un margen con fixed-top*/
+        body {
+            padding-top: 80px;
+        }
+
+        .navbar {
+            background-color: rgba(252, 95, 95, 0.966);
+
+        }
+
+        .show {
+            height: 100vh;
+            transition: 0.9s;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .position {
+            position: fixed;
+        }
+
+        .borders {
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#mostrarmodal").modal("show");
+        });
+
+    </script>
+</head>
+
+
+
+<!--.navbar-expand-lg               Sirve para indicar en que punto aparecera el toggler
+            .navbar-light                   Indicamos que usaremos un fondo claro
+            .navbar-dark                    Indicamos que usaremos un fondo oscuro
+            .bg-light                       Establecemos un fondo light para el navbar
+             Tambien podemos darle nuestro propio color de fondo con CSS
+            
+            .fixed-top                     Nos permite fijar el menu en la parte superior
+            .fixed-bottom                  Nos permite fijar el menu en la parte inferior
+
+        -->
+
+
+<!--Si queremos que el menu abarque el 100% de la pagina ponerlo fuera del container, 
+                     si lo queremos centrado y sin que lo abarque al 100% lo pondremos dentro-->
+
+<body>
+
+    <!--"navbar" especificamos que sera un menu, "navbar-expand-lg": Esta class es la que nos cambia 
+         el menu de hamburgesa de dispositivos movil a lg (Expande el menu), navbar-light: color del nav, bg-light: fondo claro-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <!--El contenido del menu lo ponemos en el container para que se centre con las sections-->
+        <div class="container">
+            <a href="#" class="navbar-brand">Menu</a>
+
+            <!--navbar-toggler le decimos a boostrap que se va a tratar de un menu hamburgesa de nav-->
+            <!--Atributos adicionales que pide boostrap4 para que funcione el nav-->
+            <!--data-target="#navbar" es la id a la que apuntara el desplegado-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" arial-laben="Menu de Navegacion">
+                <!--Crea el icono menu hamburgesa con "navbar-toggler-icon-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--contenedor del desplegable utilizamos "collapse navbar-collapse" y la id que apunta del boton para que despliege-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <!--mr-auto = margin right auto para que se posicione el texto a la derecha-->
+                <ul class="navbar-nav d-flex align-items-end">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+
+
+                    <!--*****Desplegar un elemento del menu con "dropdown"***** -->
+                    <li class="nav-item dropdown">
+                        <!--dropdown-toggle para que al clicar despliege-->
+                        <!--aria-haspopup = Para que en dispositivos de lectura(moviles) se visualize correctamente-->
+                        <!--aria-expanded="false" esto especifica que el menu se encuentra oculta pero cuando clicamos pasara a true y despliegara-->
+                        <a href="#" class="nav-link dropdown-toggle" id=menu-categorias data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <!--*******Dentro del div pondremos los subelementos enlace*******-->
+                        <!--aria-labelledby: apuntar a la id del enlace a desplegar-->
+                        <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                            <a href="#" class="dropdown-item">HTML</a>
+                            <a href="#" class="dropdown-item">CSS</a>
+                            <a href="#" class="dropdown-item">JS</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item ">
+                        <!--Desactivar un elemento del menu con "disabled" -->
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <!----------*****************  Input Buscar     **********************------------->
+                <!--"form-inline" especificamos que sera un formulario de tipo linea-->
+                <!--my-2 margen arriba y abajo de 2, my-lg-0 cuando llege a tamaño largo quitara el margen a 0 -->
+                <div>
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <!--mr-sm-2 margen a la derecha en dispositivos moviles parriba-->
+
+                        <input type="text" class=" mr-sm-2" placeholder="Buscar" arial-label="Buscar">
+                        <button class="btn btn-primary mt-1 my-sm-0" type="submit">Buscar</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis labore ipsum? Architecto,
+                        sapiente tenetur
+                        et quidem esse nihil explicabo facere modi qui in aliquam ducimus
+                        reiciendis fuga quibusdam impedit nemo accusantium repellendus. Sit magnam quos enim voluptatum
+                        nemo eligendi.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="height:60px;">
+            <div class="col-12 d-flex justify-content-center position border border">
+
+                <img src="img/descarga.jpg" alt="">
+                <img src="img/descarga2.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:1000px;">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad distinctio consequuntur vel officiis ea
+                    eligendi maxime corporis ipsum aut, quis atque delectus adipisci quisquam repellendus? Quod alias
+                    aperiam sequi,
+                    asperiores officia, omnis fugit maiores temporibus doloremque explicabo praesentium vitae officiis.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal fade d-flex align-items-center" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <h3>Cabecera de la ventana</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <h4>Texto de la ventana</h4>
+                        Mas texto en la ventana.
+                    </div>
+                    <div class="modal-footer m-auto">
+                        <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

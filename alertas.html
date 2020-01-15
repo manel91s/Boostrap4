@@ -1,0 +1,90 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Alertas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--la class alert nos muestra con un background con color el texto de dentro (muestra al usuario algo importante o avisos)-->
+                <!--alert-link muestra un enlace con el color del texto del fondo-->
+
+                <!---------------- Colores alert ------------->
+
+                <div class="alert alert-success mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-info mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-warning mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+                <div class="alert alert-danger mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-success mt-5">
+                    <h2>Encabezado</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio, totam
+                        doloribus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolor inventore.
+                        Velit, qui perspiciatis eos incidunt possimus aut nihil doloremque suscipit consectetur
+                        quibusdam amet temporibus provident, rerum sint odit aliquam.</p>
+                </div>
+
+                <div class="alert alert-primary mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-secondary mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-light mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <div class="alert alert-dark mt-3">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex distinctio,
+                    totam doloribus, <a href="" class="alert-link">odit eos minus explicab</a>
+                </div>
+
+                <!--Para dar la posibilida de cerrar la alerta al usuario-->
+                <div class="alert alert-info mt-5" id="alerta">
+                    lorem ipsum dolor sit amet.
+                    <button type="button" class="close" data-dismiss="alert" area-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

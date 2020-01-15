@@ -1,0 +1,53 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Popovers</title>
+    <script>
+        /*Funcion jquery para recojer todos los data-toggle="popover y lanzar la funcion popover() 
+        para que muestre el texto al clicar en el boton"*/
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        })
+    
+    
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Popovers</h2>
+                <!--Añadimos una separacion abajo para que se muestre el popover de "arriba"-->
+                <hr class="pb-5">
+                <!--data-placement: decimos dodnde queremos posicionar el boton al popover "top,left,right,bottom"-->
+                <!--data-toggle="popover" bostrap4 indentificara que se tratara de un popover-->
+                <!--"title" especificamos el header de bocadillo que mostrara, y data-content el cuerpo del texto -->
+
+                <button class="btn btn-primary" data-container="body" data-placement="top" data-toggle="popover" title="Titulo del popover" 
+                data-content="lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsa.">Arriba</button>
+                <button class="btn btn-primary" data-container="body" data-placement="bottom" data-toggle="popover" title="Titulo del popover" 
+                 data-content="lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsa.">Abajo</button>
+
+                 <button class="btn btn-primary" data-container="body" data-placement="left" data-toggle="popover" title="Titulo del popover" 
+                 data-content="lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsa.">Izquierda</button>
+
+                 <button class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover" title="Titulo del popover" 
+                 data-content="lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsa.">Derecha</button>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

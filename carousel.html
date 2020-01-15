@@ -1,0 +1,135 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Plantilla</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <!--"carousel slide" declarar la clase para el slidershow y la id para identificar-->
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                    <!--"carousel-indicators" para añadir las posicion de la foto de la que se muestra"-->
+                    <!--"data-target" se asignara la id "principal-carousel" para recojer las fotos del slider -->
+                    <!--"data-slide-to" las posiciones que se mostraran primero de las imagenes del "carousel-item" -->
+                    <!--"active" la foto que se mostrara por defecto primo-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#principal-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#principal-carousel" data-slide-to="1"></li>
+                        <li data-target="#principal-carousel" data-slide-to="2"></li>
+
+                    </ol>
+                    <!--Crear la clase "carousel-inner"-->
+                    <div class="carousel-inner">
+                        <!--Crear la clase carousel-item y dentro la imagen OJO: Crear tantos div como fotos como se muestra-->
+                        <!--OJO: Poner siempre "active" para que se muestre la foto que queramos que se muestre por defecto si no
+                        no aparezera-->
+                        <div class="carousel-item active">
+                            <img src="img/carousel1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <!--Flecha anterior-->
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!--"sr-only" para que se muestre las flechas en tablet-->
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <!--Fecha siguiente-->
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!--"sr-only" para que se muestre las flechas en tablet-->
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--SI QUEREMOS AÑADIR OTRO SLIDERSHOW ACORDARSE DE CAMBIAR EL ID PARA QUE NO SE INTERFIERAN LOS 2 SLIDESHOW-->
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <!--"carousel slide" declarar la clase para el slidershow y la id para identificar-->
+                <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+                    <!--"carousel-indicators" para añadir las posicion de la foto de la que se muestra"-->
+                    <!--"data-target" se asignara la id "principal-carousel" para recojer las fotos del slider -->
+                    <!--"data-slide-to" las posiciones que se mostraran primero de las imagenes del "carousel-item" -->
+                    <!--"active" la foto que se mostrara por defecto primo-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#secondary-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#secondary-carousel" data-slide-to="1"></li>
+                        <li data-target="#secondary-carousel" data-slide-to="2"></li>
+
+                    </ol>
+                    <!--Crear la clase "carousel-inner"-->
+                    <div class="carousel-inner">
+
+                        <!--Crear la clase carousel-item y dentro la imagen OJO: Crear tantos div como fotos como se muestra-->
+                        <!--OJO: Poner siempre "active" para que se muestre la foto que queramos que se muestre por defecto si no
+                            no aparezera-->
+                        <div class="carousel-item active">
+
+          <!--------------------------Añadir texto en el slideshow con "carousel-caption d-block" ------------------->
+          
+                            <!--Si queremos añadir mas texto en las otras imagenes copiarlo debajo del contenedor "carousel-item"-->
+                            <div class="carousel-caption d-block">
+                                <h4>Titulo de la Imagen</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tenetur.</p>
+                            </div>
+                            <img src="img/carousel1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <!--Flecha anterior-->
+                    <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!--"sr-only" para que se muestre las flechas en tablet-->
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <!--Fecha siguiente-->
+                    <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!--"sr-only" para que se muestre las flechas en tablet-->
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

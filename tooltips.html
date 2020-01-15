@@ -1,0 +1,67 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Tooltips</title>
+    <script>
+
+        /*buscar todos los elementos con data-toggle="tooltip" y disparar la funcion tooltip*/
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <!--data-toggle="tooltip" indicamos a boostrap que lo trate como tooltip-->
+                <!--data-placement para que se visualice en posiciones "left,right,top,bottom-->
+                <!--En title ponemos lo que queremos que se muestre en el tooltip -->
+
+                <p>Lorem ipsum <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip en enlace">dolor
+                        sit amet consectetur</a> adipisicing elit.
+                    Quis dolore officia <a href="#" data-toggle="tooltip" data-placement="right"
+                        title="www.softonic.com">eius harum nihil q</a>eius harum nihil quasi corporis libero debitis
+                    similique deserunt sit, <a href="#" data-toggle="tooltip" data-placement="bottom"
+                        title="www.google.es">dolor sit amet consectetur </a>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Animi corporis deserunt voluptates ad? Soluta, repellendus sint! Ex temporibus,
+                    explicabo sit provident <a href="#" data-toggle="tooltip" data-placement="left"
+                        title="www.mango.es">officia eius harum nihil </a>commodi distinctio labore velit praesentium.
+                </p>
+
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip en Boton">
+                    Boton
+                </button>
+
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip en Boton">
+                    Boton
+                </button>
+
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip en Boton">
+                    Boton
+                </button>
+
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip en Boton">
+                    Boton
+                </button>
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Grid</title>
+    <style>
+        /* todos los div que se encuentren en clase row(filas)*/
+        .row>div {
+            background: #f2f2fe;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--"Class container centra todo el contenido de la pagina"-->
+    <div class="container">
+        <!--"Al utilizar container tenemos que crear la fila horizontal para añadir contenido"-->
+        <div class="row">
+
+            <!--Dentro de row obligatoriamente tenemos que añadir "col" para añadir columnas-->
+
+            <!---Tamaño de Columnas en Bootrstrap 4: 
+            .col        Exra Pequeño (Extra Small) - Smartphones Vertical   Menos de 544px
+            .com-sm     Pequeño (Small) - Smarthpones Vertical              Mas de 544px y Menos de 768px
+            .col-md     Mediano (Medium) - Tablets                          Mas de 768px y Menos de 992px
+            .col-lg     Largo (Large) - Computadoras                        Mas de 992px y Menos de 1200px
+            .col-xl     Extra Largo (Extra Large) - Computadoras            Mas de 1200px            
+            -->
+
+
+            <!--Para adaptar los tipos de columna automaticamente se ha de poner por ejemplo: col-md en todas las celdas de la fila-->
+            <div class="col-12 col-sm-6 col-md">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque voluptate mollitia velit quam
+                    quidem, deleniti error. Minima pariatur asperiores,
+                    ipsa maxime, quaerat commodi vitae odit, suscipit repudiandae fugit quas accusamus?</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque voluptate mollitia velit quam
+                    quidem, deleniti error. Minima pariatur asperiores,
+                    ipsa maxime, quaerat commodi vitae odit, suscipit repudiandae fugit quas accusamus?</p>
+            </div>
+
+            <div class="col-12 col-sm col-md col-xl-12">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque voluptate mollitia velit quam
+                    quidem, deleniti error. Minima pariatur asperiores,
+                    ipsa maxime, quaerat commodi vitae odit, suscipit repudiandae fugit quas accusamus?</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

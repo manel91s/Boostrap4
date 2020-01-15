@@ -1,0 +1,78 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Formularios</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <form action="">
+                    <!--En bootstrap4 para trabajar con los inputs tienen que estar dentro del div "form-group"-->
+                    <div class="form-group border-services">
+                        <label for="nombre">Nombre</label>
+                        <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pass">Contraseña</label>
+                        <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                        <input type="password" class="form-control" placeholder="Contraseña" name="pass" id="pass">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <!--"form-control" añadir esta clase para que el input abarque el 100% de la columna-->
+                        <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pais">Pais</label>
+                        <select name="pais" id="pais" class="form-control">
+                            <option value="mexico">Mexico</option>
+                            <option value="España">España</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </div>
+
+                    <!--"form-check" es como form-control para que abarque el 100% de la columna pero para los checkbox-->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Mujer
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="terminos" id="terminos" class="form-check-input mr-2">Acepto
+                            los termnos y Condiciones
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

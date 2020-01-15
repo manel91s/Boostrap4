@@ -1,0 +1,86 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Tablas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--"table" da una forma de tabla predeterminada de Bootstrap4-->
+
+                <!------------------------Classes de tabla------------------------->
+                <!-- .table-dark Nos permite cambiar los colores de la tabla a oscuros-->
+                <!-- .table-striped Nos permite alternar colores entre cada fila-->
+                <!-- .table-bordered Nos permite agregarle botones a la tabla-->
+                <!-- .table-hover Nos permite agregarle un hover a las filas-->
+                <!-- .table-sm Nos permite hacer la tabla mas pqueña eliminando paddings-->
+                <!-- .table-responsive-xx Nos permite adaptar nuestra tabla a dispositivos moviles-->
+
+                      <!--Colores Fondo #1       
+                        .table-active
+                        .table-success
+                        .table-warning
+                        .table-danger
+                        .table-info-->
+
+                        <!--Colores Fondo #2
+                        .bg-primary
+                        .bg-succes
+                        .bg-warning
+                        .bg-danger
+                        .bg-info
+                        -->
+
+                        <!--Colores text *Podemos combinar el color del texto
+                            text-white = blanco-->
+
+
+                <table class="table table-bordered table-hover table-responsive-lg">
+                    <thead>
+
+                        <tr class="table-danger">
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Pais</th>
+                        </tr>
+                    </thead>
+                    <tr class="table-success">
+                        <td>Carlos</td>
+                        <td>21</td>
+                        <td>Mexico</td>
+                    </tr>
+
+                    <tr class="table-active">
+                        <td >Alejandro</td>
+                        <td>34</td>
+                        <td>España</td>
+                    </tr>
+
+
+                    <tr class="table-info">
+                        <td>Cesar</td>
+                        <td>37</td>
+                        <td>Colombia</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

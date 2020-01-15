@@ -1,0 +1,103 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Barras de Progreso</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <h3>Barras de Pogreso</h3>
+                <hr>
+                <div>
+                    <!--Añadir class progress para que boostrap4 lo trate como una progress bar-->
+                    <div class="progress mb-3" style="height:25px;">
+                        <div class="progress-bar" role="progressbar" style="width:0%;">0%</div>
+                    </div>
+
+                    <div class="progress mb-3" style="height:10px;">
+                        <div class="progress-bar" role="progressbar" style="width:50%;">50%</div>
+                    </div>
+
+                    <div class="progress mb-3" style="height:50px;">
+                        <div class="progress-bar" role="progressbar" style="width:100%;">100%</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <!--bg-primary, etc.. son los colores del fondo de las barras-->
+                <!--height le damos altura a la barra de proceso-->
+                <div class="progress mb-3" style="height:30px;">
+                    <!--con width añadimos el proceso completado de la bara de progreso-->
+                    <div class="progress-bar bg-primary" role="progressbar" style="width:50%;">50%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:30%;">30%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width:60%;">60%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-warning role="progressbar" style="width:50%;">50%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width:10%;">10%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-dark" role="progressbar" style="width:50%;">50%</div>
+                </div>
+                <div class="progress mb-3" style="height:30px;">
+                    <div class="progress-bar bg-light" role="progressbar" style="width:50%; color:#000;">50%</div>
+                </div>
+            </div>
+            <div class="col">
+                <!--progress-bar-striped cambiamos el estilo de la barra de proceso-->
+                    <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-warning role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped bg-inverse" role="progressbar" style="width:50%;">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height:30px;">
+                            <div class="progress-bar progress-bar-striped  bg-light" role="progressbar" style="width:50%; color:#000;">50%</div>
+                        </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

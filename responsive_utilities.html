@@ -1,0 +1,41 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Responive utilities</title>
+    <style>
+        .columna {
+            background-color: #2191fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--Mostrar contenido dependiendo el tipo de tamaño del dispositivo con "none" -->
+            <div class="columna col d-block d-sm-none">XS - Extra Small</div>
+            <div class="columna col d-none d-sm-block d-md-none">SM - Small</div>
+            <div class="columna col d-none d-md-block d-lg-none">MD - Medium</div>
+            <div class="columna col d-none d-lg-block d-xl-none">LG - Large</div>
+            <div class="columna col d-none d-xl-block">XL - Extra Large</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

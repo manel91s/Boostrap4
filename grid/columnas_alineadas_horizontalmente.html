@@ -1,0 +1,61 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="..//js/bootstrap.min.js"></script>
+    <title>Columnas Alineadas Horizontalmente</title>
+    <style>
+        .row {
+            background: #e8e8ee;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .columna {
+            background: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4d5061;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-around">
+                <div class="columna col-4">Columna 1</div>
+                <div class="columna col-4">Columna 2</div>
+            </div>
+
+            <div class="row justify-content-between">
+                    <div class="columna col-4">Columna 1</div>
+                    <div class="columna col-4">Columna 2</div>
+                </div>
+    </div>
+
+</body>
+
+</html>

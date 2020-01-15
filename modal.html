@@ -1,0 +1,120 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--Crear los atributos data-toggle="modal" y data-target="#ma-modal" esta apunta a la id del texto-->
+                <!--Crear el boton y apuntar a la id modal que cuando pulsemos el boton aparezca el show del texto-->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#ma-modal">Abir Modal</button>
+
+                <!--Añadir todas las clases y atributos para el buen funcionamiento del show modal-->
+                <div class="modal fade" id="ma-modal" tabindex="-1" role="dialog" arial-labelledby="ma-modal"
+                    aria-hidden="true">
+                    <!--crear div class modal-dialog y div modal-content, "Dentro de modal-content meteremos el contenido"-->
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!--"modal-header" crea un header en el container del show -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">Titulo de la ventana</h5>
+                                <!--agregar boton de cerrar la ventana-->
+                                <!--Clases esenciales para cerrar correctamente la ventana-->
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <!--&times; es la "x" para cerrar la ventana-->
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <h2>Hola mundo</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quisquam rem veniam
+                                    ullam, nam enim!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Distinctio, quo doloribus laborum corrupti sit eum voluptate deleniti impedit
+                                    repudiandae ipsam nulla
+                                    et quaerat perspiciatis. Architecto consectetur reiciendis at necessitatibus ex!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore repudiandae
+                                    obcaecati rem aperiam. Maiores, eligendi porro obcaecati impedit
+                                    eum beatae quidem illo. Odit rem pariatur numquam, odio nam eius!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---------------------MODAL CON GRID---------------------------------->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#ma-modal-grid">Abir Modal con
+                    Grid</button>
+
+                <!--Añadir todas las clases y atributos para el buen funcionamiento del show modal-->
+                <div class="modal fade" id="ma-modal-grid" tabindex="-1" role="dialog" arial-labelledby="ma-modal-grid"
+                    aria-hidden="true">
+                    <!--crear div class modal-dialog y div modal-content, "Dentro de modal-content meteremos el contenido"-->
+                    <!--Cambiar el tamaño con modal-lg-->
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!--"modal-header" crea un header en el container del show -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">Grid</h5>
+                                <!--agregar boton de cerrar la ventana-->
+                                <!--Clases esenciales para cerrar correctamente la ventana-->
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <!--&times; es la "x" para cerrar la ventana-->
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <!--container fluid para que abarce el 100% del ancho-->
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <!--Al cambiar de dispositivo tablet para arriba que extienda a dos columnas-->
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est
+                                                quisquam itaque debitis soluta voluptates, assumenda aliquid,
+                                                minima illum quam sapiente asperiores ipsam, eius aperiam mollitia? Quas
+                                                dignissimos unde est!</p>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est
+                                                quisquam itaque debitis soluta voluptates, assumenda aliquid,
+                                                minima illum quam sapiente asperiores ipsam, eius aperiam mollitia? Quas
+                                                dignissimos unde est!</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--Añadir botones en el footer del modal-->
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
+                                <!--"data-dismiss" para que al pulsar cancelar cierre el modal-->
+                                <button class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+</body>
+
+</html>

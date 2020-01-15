@@ -1,0 +1,139 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Grupos de Listas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--"list-group" añadimos la clase para agregar el estilo de lista en boostrap4-->
+                <ul class="list-group">
+                    <!--"list-group-item" añadimos igual otra clase para agregar correctamente alos elementos li-->
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    <!--"active" Selecciona un elemento "en caso que queramos selecionar algo importante"-->
+                    <li class="list-group-item active">Lorem ipsum dolor sit amet.</li>
+                    <!--"disabled" desabilita la seleccion en esa li-->
+                    <li class="list-group-item disabled">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="list-group">
+                    <!--"list-group-item-action añade un tipo hover a los enlaces-->
+                    <a href="" class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet.</a>
+                    <!--"active" Selecciona un elemento "en caso que queramos selecionar algo importante"-->
+                    <a href="" class="list-group-item list-group-item-action active">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet.</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Listas-->
+        <div class="row mt-5">
+            <div class="col">
+                <div class="list-group">
+                    <!--colores-->
+                    <li class="list-group-item list-group-item-success">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item list-group-item-info">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item list-group-item-warning">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item list-group-item-danger">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item list-group-item-light">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item list-group-item-dark">Lorem ipsum dolor sit amet.</li>
+                </div>
+            </div>
+        </div>
+
+        <!--Enlaces-->
+        <div class="row mt-5 mb-5">
+            <div class="col">
+                <div class="list-group">
+                    <!--colores-->
+                    <a href="#" class="list-group-item group-item-action ">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Lorem ipsum dolor
+                        sit amet.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Lorem ipsum dolor
+                        sit amet.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Lorem ipsum dolor
+                        sit amet.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Lorem ipsum dolor
+                        sit amet.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Lorem ipsum dolor
+                        sit amet.</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lorem ipsum dolor sit.
+                        <!--badge nos añade un pequeño recuadro al span -->
+                        <span class="badge badge-primary">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lorem ipsum dolor sit.
+                        <!--badge nos añade un pequeño recuadro al span -->
+                        <span class="badge badge-primary">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lorem ipsum dolor sit.
+                        <!--badge nos añade un pequeño recuadro al span -->
+                        <span class="badge badge-primary">3</span>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <h2>ESTRUCTURA LIST ITEM POST CON LA HORA </h2>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="list-group">
+                    <!--enlace list 1-->
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-center">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <small>11:58pm</small>
+                        </div>
+                        <p class="mb-1">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Fugiat incidunt dicta natus quia quae! Repellat in sunt maxime quos
+                            voluptate!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae unde nostrum
+                            necessitatibus enim velit, nemo, cupiditate aspernatur deserunt,
+                            nihil minima culpa dolorem dolores! Corporis earum tempora, exercitationem ipsum quia
+                            praesentium.</p>
+                    </a>
+
+                    <!--Enlace list 2-->
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-center">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                                <small>11:58pm</small>
+                            </div>
+                            <p class="mb-1">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Fugiat incidunt dicta natus quia quae! Repellat in sunt maxime quos
+                                voluptate!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae unde nostrum
+                                necessitatibus enim velit, nemo, cupiditate aspernatur deserunt,
+                                nihil minima culpa dolorem dolores! Corporis earum tempora, exercitationem ipsum quia
+                                praesentium.</p>
+                        </a>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

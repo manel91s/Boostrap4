@@ -1,0 +1,65 @@
+<!--" BOOTSTRAP4 para su buen funcionamiento necesita la libreria de jquery y popper.js "-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Agregar librerias esenciales-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Botones 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-6">
+                <h2>Checkbox</h2>
+                <hr>
+                <!--Hacer checkbox en Bootstrap4-->
+                 <!--"btn-group" ajunta los botones y los identifica como grupo de botones-->
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <!--En Bootstrap4 los input check se poenen dentro de los label-->
+                    <label class="btn btn-primary">
+                        <input type="checkbox" autocomplete="off"> Checkbox 1
+                    </label>
+                    <label class="btn btn-primary active">
+                        <input type="checkbox" autocomplete="off"> Checkbox 2
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="checkbox" autocomplete="off"> Checkbox 3
+                    </label>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="row pt-5">
+                <div class="col-6">
+                    <h2>Radio Button</h2>
+                    <hr>
+                    <!--Hacer Radio buttons en Bootstrap4-->
+                     <!--"btn-group" ajunta los botones y los identifica como grupo de botones-->
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <!--En Bootstrap4 los input radio se ponen dentro de los label-->
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sexo" autocomplete="off"> Hombre
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="sexo" autocomplete="off"> Mujer
+                        </label>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+</body>
+
+</html>
